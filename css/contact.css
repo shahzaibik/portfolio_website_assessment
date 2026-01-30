@@ -1,0 +1,99 @@
+/* base css for contact section */
+.contact {
+    padding: 100px 0;
+    background: var(--bg-dark);
+}
+/*ss for the content of contact section*/
+.contactContent {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+/* css for the icons of contact information */
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+/* effect when we hover on icons */
+.item:hover .contact-icon {
+    transform: rotateY(360deg) scale(1.1);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
+}
+
+.details h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.details p {
+    color: var(--text-secondary);
+}
+/* css for the contact section foorm and fields */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.group {
+    position: relative;
+}
+
+.group input,
+.group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: var(--bg-white);
+    color: var(--text-primary);
+}
+
+.group input:focus,
+.group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    background: var(--bg-white);
+}
+
+.group input::placeholder,
+.group textarea::placeholder {
+    color: var(--text-secondary);
+}
+
+.group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+

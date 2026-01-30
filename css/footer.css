@@ -1,0 +1,40 @@
+/* main styles for the footer sections */
+.footer {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-color);
+}
+/* styles for the content of footer section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+/* styles for the social links and their icons */
+.social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.social a:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+

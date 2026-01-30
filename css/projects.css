@@ -1,0 +1,132 @@
+/* base style for the projects section */
+.projects {
+    padding: 100px 0;
+    background: var(--bg-white);
+}
+/*grid layout for projects cards*/
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.projectCard {
+    background: var(--bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.4s ease;
+    position: relative;
+    border: 1px solid var(--border-color);
+}
+/* crad hover effect */
+.projectCard:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+/*projects image styling*/
+.projectImage {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.projectImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.projectCard:hover .projectImage img {
+    transform: scale(1.1);
+}
+/* overlay show on top of image */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.9), rgba(59, 130, 246, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .project-overlay {
+    opacity: 1;
+}
+/* main styling for the links that overlays on the image */
+.projectLinks {
+    display: flex;
+    gap: 1.5rem;
+}
+/* styling for project link icon */
+.projectLink {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+}
+/* animate links when we hover on the links */
+.projectCard:hover .projectLink {
+    transform: translateY(0);
+    animation: fadeInUp 0.5s ease forwards;
+}
+/* delay the animation for second link */
+.projectLink:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.projectLink:hover {
+    transform: scale(1.2) rotate(360deg);
+    background: var(--primary-color);
+    color: white;
+}
+/*styles for the text of project section */
+.projectContent {
+    padding: 1.5rem;
+}
+
+.projectContent h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.projectContent p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+/*styles for technologies displayed in the project card*/
+.projectTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.375rem 0.875rem;
+    background: var(--bg-dark);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+}
+

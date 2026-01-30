@@ -1,0 +1,52 @@
+/* base styles for hire me section*/
+.hireMe {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+}
+/*styles for the content to be displayed in this section*/
+.hireContent h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+.hireContent p {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*styles fore the button of hire me section */
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hireMe .button-primary {
+    background: white;
+    color: var(--primary-color);
+}
+
+.hireMe .button-primary:hover {
+    background: var(--bg-light);
+}
+
+.hireMe .button-outline {
+    border-color: white;
+    color: white;
+}
+
+.hireMe .button-outline:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
