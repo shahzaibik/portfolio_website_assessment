@@ -31,7 +31,6 @@ Just open `index.html` in your browser. No fancy setup needed!
 ## What's in here
 
 ```
-portfolio/
 ├── index.html
 ├── script.js
 ├── css/ (all the styles)
@@ -54,4 +53,5 @@ portfolio/
 - Phone: +44 73998 54162
 - LinkedIn: shayzeekhan
 - GitHub: (check the links in the site)
+
 
